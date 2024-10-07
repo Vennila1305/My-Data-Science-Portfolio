@@ -3,103 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Vennila's Portfolio</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Project Portfolio</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    /* You can add custom CSS here if needed */
+    .project-card {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .project-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .project-card h3 {
+      margin-top: 15px;
+      font-size: 1.5em;
+    }
+    .project-card p {
+      font-size: 1em;
+      color: #555;
+    }
+    .project-card a {
+      margin-top: 15px;
+    }
   </style>
 </head>
 <body>
-
-  <!-- Navigation bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">My Portfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Section for Hero Banner -->
-  <section class="bg-primary text-white text-center p-5" id="hero">
-    <div class="container">
-      <h1>Welcome to Vennila's DataScience Portfolio</h1>
-      <p class="lead">I leverage data to drive decision-making, predict trends, and solve real-world problems</p>
-      <a href="#projects" class="btn btn-light">View My Work</a>
-    </div>
-  </section>
-
-  <!-- Section for About -->
-  <section class="container py-5" id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm a Data Scientist with a strong foundation in machine learning and data analysis, I specialize in translating complex data into strategic business insights.</p>
-  </section>
-
-  <!-- Section for Projects -->
-  <section class="container py-5" id="projects">
-    <h2>Projects</h2>
+  <div class="container my-5">
     <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="Pizza Sales Analysis photo.jpg" class="card-img-top" alt="Pizza Sales Analysis photo.jpg">
-          <div class="card-body">
-            <h5 class="card-title"> Pizza Sales Dashboard Analysis using Excel ! </h5>
-            <p class="card-text">A deep dive analysis into pizza sales trends, analyzing key insights like top-selling pizzas, customer preferences, and ingredient trends using interactive visualizations. This dashboard is a perfect example of how data can be leveraged to make strategic decisions in the food and beverage industry</p>
-            <a href="https://github.com/Vennila1305/Pizza-sales-dashboard.git" class="btn btn-primary"target="_blank">View Project</a>
-          </div>
+      <!-- Project 1 -->
+      <div class="col-md-6">
+        <div class="project-card">
+          <img src="Pizza Sales Analysis photo.jpg" alt="Pizza Sales Analysis">
+          <h3>Pizza Sales Dashboard Analysis using Excel</h3>
+          <p>A deep dive analysis into pizza sales trends using Excel, analyzing top-selling pizzas, customer preferences, and ingredient trends using interactive visualizations.</p>
+          <a href="#" class="btn btn-primary">View Project</a>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="Dashboard Picture power bi.jpg" class="card-img-top" alt="Dashboard Picture power bi.jpg">
-          <div class="card-body">
-            <h5 class="card-title">Pizza Sales Dashboard Analysis using Power BI</h5>
-            <p class="card-text">This project involved analyzing pizza sales data to identify sales trends, top-selling pizzas, and peak order times. Using Power BI, I created interactive dashboards to visualize sales performance and customer behavior. The insights gained helped optimize sales strategies and improve inventory management, leading to enhanced operational efficiency and profitability.</p>
-            <a href="https://github.com/Vennila1305/Pizza-sales-dashboard.git" class="btn btn-primary"target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project Image">
-          <div class="card-body">
-            <h5 class="card-title">Project 3</h5>
-            <p class="card-text">A brief description of your project.</p>
-            <a href="#" class="btn btn-primary">View Project</a>
-          </div>
+      <!-- Project 2 -->
+      <div class="col-md-6">
+        <div class="project-card">
+          <img src="Dashboard Picture power bi.jpg" alt="Pizza Sales Dashboard">
+          <h3>Pizza Sales Dashboard Analysis using Power BI</h3>
+          <p>This project involved analyzing pizza sales data to identify trends and improve inventory management. Interactive dashboards were created using Power BI.</p>
+          <a href="#" class="btn btn-primary">View Project</a>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Section for Contact -->
-  <section class="container py-5" id="contact">
-    <h2>Contact</h2>
-    <p>Feel free to reach out to me via email: <strong>vennila1305@gmail.com</strong></p>
-  </section>
+    <div class="row">
+      <!-- Project 3 -->
+      <div class="col-md-6">
+        <div class="project-card">
+          <img src="https://your-image-link.jpg" alt="Chocolate Sales Analysis">
+          <h3>Chocolate Sales Analysis using Power BI</h3>
+          <p>The project involved utilizing Power BI to analyze chocolate sales data, including country, salesperson, product, and customer insights.</p>
+          <a href="#" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="col-md-6">
+        <div class="project-card">
+          <img src="https://your-image-link.jpg" alt="HR Analytics Dashboard">
+          <h3>HR Analytics Dashboard using Power BI</h3>
+          <p>This project analyzed HR data using Power BI to provide insights into employee attrition, job satisfaction, and department-wise metrics.</p>
+          <a href="#" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- Footer -->
-  <footer class="bg-light text-center py-4">
-    <p>&copy; 2024 My Portfolio | Designed by Vennila Giri</p>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
